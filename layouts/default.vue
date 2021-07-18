@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="content">
+      <AppMenu />
       <Nuxt />
     </div>
     <!-- sticky footer goes here -->
@@ -8,16 +9,20 @@
 </template>
 
 <script>
+import AppMenu from "@/components/AppMenu.vue";
 
 export default {
+  components: {
+    AppMenu
+  }
 };
 </script>
 
 <style>
-html {
+htm AppMenul {
   font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-font-weight: 300;
+  font-weight: 300;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

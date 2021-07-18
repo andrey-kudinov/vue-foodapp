@@ -13,6 +13,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     quotes: ["error", "double"],
-    semi: ["error", "always"]
+    semi: ["error", "always"],
+    "space-before-function-paren": "error"
   }
 };
