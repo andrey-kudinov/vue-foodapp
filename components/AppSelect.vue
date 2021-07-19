@@ -1,14 +1,14 @@
 <template>
   <div>
-    <label for="select">What {{ select }} do you want?</label>
+    <label for="select">What a {{ select }} do you want?</label>
 
     <select
       id="select"
-      @change="$emit('change', $event.target.value)"
       :name="select"
+      @change="$emit('change', $event.target.value)"
     >
-      <option value>-- Please select a {{ select }}</option>
-      <option v-for="option in selectOptions" :key="option.id" :value="option">
+      <option value>--Please select--</option>
+      <option v-for="option in selectOptions" :key="option" :value="option">
         {{ option }}
       </option>
     </select>
@@ -20,11 +20,11 @@ export default {
   props: {
     select: {
       type: String,
-      default: "cuisine"
+      default: "restaurant"
     },
     selectOptions: {
       type: Array,
-      default: () => ["tacos", "pizza", "dim sumπ"]
+      default: () => ["tacos", "pizza", "dim sum"]
     }
   }
 };
