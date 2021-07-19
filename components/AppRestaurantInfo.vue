@@ -18,7 +18,7 @@
           <div class="iteminfo">
             <div>
               <h4 v-text="menuitem.item"></h4>
-              <p>priceFormatting(menuitem.price)</p>
+              <p>{{ priceFormatting(menuitem.price) }}</p>
             </div>
             <button class="ghost">View Item</button>
           </div>

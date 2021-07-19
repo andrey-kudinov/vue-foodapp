@@ -1,9 +1,18 @@
 <template>
-  <div>About</div>
+  <main>
+    <h1>Restaurants</h1>
+    <AppRestaurantInfo />
+  </main>
 </template>
 
 <script>
-export default {};
+import AppRestaurantInfo from "@/components/AppRestaurantInfo.vue";
+
+export default {
+  components: {
+    AppRestaurantInfo
+  }
+};
 </script>
 
 <style lang="scss" scoped></style>

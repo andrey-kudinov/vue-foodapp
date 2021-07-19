@@ -4,16 +4,18 @@
       <AppMenu />
       <Nuxt />
     </div>
-    <!-- sticky footer goes here -->
+    <AppFooter />
   </div>
 </template>
 
 <script>
 import AppMenu from "@/components/AppMenu.vue";
+import AppFooter from "@/components/AppFooter.vue";
 
 export default {
   components: {
-    AppMenu
+    AppMenu,
+    AppFooter
   }
 };
 </script>
